@@ -1,0 +1,118 @@
+h1 {
+    color: rgb(255,0,0);
+    font-size: 100px;
+    border: Yellow groove 10px;
+    background: black;
+    text-shadow: 5px 5px pink;
+    font-family: Arial;
+  } 
+  body {
+    background-Color: Cyan;
+  }
+  
+  /* Attributes for all questions */
+  .questions{
+    font-size: 70px;
+    font-family: Brush Script MT;
+    text-align: center;
+    background: white;
+    
+  }
+  
+  /* Attributes for Answers */
+  /*Preferred Name*/.preferredName{
+    text-align: center;
+    color: rgb(255,255,255);
+    font-size: 75px;
+    background-image: url("https://th.bing.com/th/id/R.0d0d6d8e28df7dfae0a00f9c88755d7d?rik=kGQMdo7%2b%2bHgxig&riu=http%3a%2f%2fmedia2.giphy.com%2fmedia%2fZTAojHK9IHsSQ%2fgiphy.gif&ehk=BQIsw2IblI9zb21srcjzqB230tjg3MVrKxej%2fxtwapQ%3d&risl=&pid=ImgRaw&r=0");
+    
+    border: black 10px;
+    height:300px;  
+     
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Favorite Color*/.red{
+    text-align: center;
+    color: rgb(255,0,0);
+    font-size: 50px;
+    background: white;
+    border: red dotted 5px;
+    width: 300px;
+      
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  /*Favorite Artwork*/.favoriteArtwork{
+    text-align: center;
+    color: rgb(255,255,25);
+    font-size: 50px;
+    background: black;
+    border: lime inset 5px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  /*Excited About*/.excitedAbout{
+    text-align: center;
+    color: rgb(255,255,25);
+    font-size: 50px;
+    background: black;
+    border: yellow solid 5px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Not Excited About*/.notExcitedAbout{
+    text-align: center;
+    color: rgb(0,0,40);
+    font-size: 50px;
+    background: orange;
+    border: white double 5px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Recommendations*/.recommendations{
+    text-align: center;
+    color: rgb(0,255,0);
+    font-size: 40px;
+    background: Black;
+    border: white double 5px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Image Settings */
+  .samuraiJackImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+     max-width: 900px;
+  }
+  .rgbCircle{
+    max-width: 360px;
+  }
+  .bookPNG{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+     max-width: 600px;
+  }
+  .homeworkPNG{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  .moviePNGs{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
