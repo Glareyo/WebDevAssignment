@@ -7,3 +7,29 @@ body{
 h1{
     color: red;
 }
+
+.projects{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.web-box{
+    background: gray;
+    width: 20rem;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+}
+.web-link{
+    background: lightgray;
+    padding: 0rem 1rem;
+    border: 0.5rem;
+    border-style: solid;
+    border-color: darkgray;
+    width: 100%;
+}
+.web-link:hover{
+    background-color: black;
+    color: red;
+}
