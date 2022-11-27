@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+} 
+
+:root {
+	--color-bg: #222;
+  --color-text: #fcfcfc;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: .75rem;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+h3 {
+    color: tomato;
+}
+
+p {
+    line-height: 1.75;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: 4rem 0;
+}
+
+nav{
+  position:fixed;
+  background-color: var(--color-bg);
+  text-align: right;
+  padding: 0.5em 1em;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+nav a{
+  margin: 0 1rem;
+}
+nav a:link{
+  color: var(--color-text);
+  text-decoration: none;
+}
+nav a:visited{
+  color: var(--color-text);
+  text-decoration: none;
+}
+nav a:hover{
+  color: tomato;
+}
+
+
+.back-to-top{
+  background-color: rgb(68, 68, 68);
+  color: white;
+  text-align: center;
+  
+/*   text-align: middle; */
+  width: 3.5rem;
+  height: 3.5rem;
+  
+  padding: 0.5rem 0rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  
+  position:fixed;
+  bottom: 0.5em;
+  right: 0.5em;
+  
+  border-radius: 1rem;
+}
+footer{
+  margin: 6em auto 1em auto;
+  text-align: center;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+  padding: 5em 0 2em 0;
+}

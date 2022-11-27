@@ -1,0 +1,83 @@
+:root {--BackgroundImage: url(https://web.archive.org/web/20090804065439/http://hk.geocities.com/carmen420hk/cloudy_wallpaper.gif)}
+
+body{
+  background: var(--BackgroundImage);
+  background-attachment: fixed;
+}
+
+section{
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+header{
+  border-radius: 100%;
+  background: linear-gradient(0deg,green,cyan);
+  text-align:center;
+  padding: 10em 1em;
+}
+#types-of-apples-section{
+  max-width: 30rem;
+  width:100%;
+}
+#types-of-apples-section marquee{
+  background-image: url(https://web.archive.org/web/20091027154119/http://geocities.com/EnchantedForest/Mountain/6197/apple.gif);
+}
+#types-of-apples-section img{
+  max-width: 7rem;
+  width: 100%;
+  transition: max-width 1s;
+}
+#types-of-apples-section img:hover{
+  max-width: 20rem;
+  transition: max-width 4s;
+}
+.tree{
+  max-width: 100%;
+  width: 100%;
+  background-image: url(https://web.archive.org/web/20091020160940/http://hk.geocities.com/pillpill1231/tree.gif);
+}
+.grass{
+  width: 100%;
+  height: 2.5rem;
+  bottom: -1%;
+  left: -5%;
+  position: fixed;
+  background-image:url(https://web.archive.org/web/20091021103043/http://www.geocities.com/bearlyherenow/grass_blowing_in_wind_lg_clr.gif);
+}
+.grass-2{
+  width: 100%;
+  height: 2.5rem;
+  position: fixed;
+  left: 0%;
+  bottom: -1%;
+  background-image:url(https://web.archive.org/web/20091021103043/http://www.geocities.com/bearlyherenow/grass_blowing_in_wind_lg_clr.gif);
+}
+
+.stickers{
+  position: absolute;
+  left: 50%;
+  
+}
+header img{
+  position: absolute;
+  left: 10%;
+  top: 6%;
+}
+#songs-section{
+  background-color: white;
+}
+
+nav{
+  position:fixed;
+  top: 30%;
+  background-color: red;
+  z-index: 3;
+}
+nav audio{
+  width: 100%;
+  position: absolute;
+}
+nav p{
+  text-align: center;
+}

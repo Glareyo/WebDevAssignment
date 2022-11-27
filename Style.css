@@ -1,16 +1,18 @@
 body{
     margin: 0;
     padding: 0;
+    background: darkgray;
 }
 
 
-h1{
-    color: red;
-}
+
 
 .projects{
     margin: 0 auto;
     text-align: center;
+}
+.projects h2{
+
 }
 
 

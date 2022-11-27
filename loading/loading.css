@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --bucket-color: darkgray;
+    --bucket-width: 10rem;
+    --bucket-stripe-color: red;
+    --bucket-rounded-height: 3rem;
+    --bucket-height: 6rem;
+    
+    --waiting-animation-duration: 10s;
+    --loading-animation-duration: 10s;
+    
+    --paint-color-1: black;
+    --paint-color-2: yellow;
+    --paint-color-3: red;
+    --paint-color-4: gray;
+  }
+  
+  
+  #pouring-paint-1 {
+    background-color: red;
+    position: absolute;
+    border-radius: 20%;
+    transform: translate(-150%, -150%);
+    height: 160px;
+    width: 32px;
+    left: 50%;
+    top: 50%;
+    animation-name: pouring-paint-1;
+    animation-duration: var(--loading-animation-duration);
+    animation-iteration-count: infinite;
+  }
+  #pouring-paint-2 {
+    background-color: yellow;
+    position: absolute;
+    border-radius: 20%;
+    transform: translate(50%, -150%);
+    height: 10rem;
+    width: 2rem;
+    left: 50%;
+    top: 50%;
+    animation-name: pouring-paint-2;
+    animation-duration: var(--loading-animation-duration);
+    animation-iteration-count: infinite;
+  }
+  #filling-paint {
+    position: absolute;
+  
+    background-color: orange;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -150%);
+    height: 3rem;
+    width: var(--bucket-width);
+  
+    border-radius: 100%;
+  
+    animation-name: load;
+    animation-duration: var(--loading-animation-duration);
+    animation-iteration-count: infinite;
+    animation-fill-mode: foward;
+    /*   animation-direction: alternate; */
+  }
+  
+  #loading {
+    width: var(--bucket-width);
+    height: var(--bucket-height);
+    background-color: var(--bucket-color);
+    /*   border: .5rem solid; */
+  
+    display: absolute;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #main-bucket {
+    width: var(--bucket-width);
+    height: var(--bucket-height);
+    z-index: 2;
+    background-color: var(--bucket-color);
+  
+    /*   background-color: red; */
+  }
+  #top-of-bucket {
+    width: var(--bucket-width);
+    height: var(--bucket-rounded-height);
+    border-radius: 100%;
+  
+    background-color: gray;
+    transform: translate(0%, -50%);
+  }
+  #bottom-of-bucket {
+    width: var(--bucket-width);
+    height: var(--bucket-rounded-height);
+    border-radius: 100%;
+  
+    background-color: var(--bucket-color);
+    transform: translate(0%, -50%);
+  }
+  
+  #waiting {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+  }
+  
+  #coloring-box-top {
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--paint-color-1);
+    transform: translate(0%, -150%);
+  
+    animation-name: paint-top-box;
+    animation-duration: var(--waiting-animation-duration);
+    animation-iteration-count: infinite;
+  }
+  #coloring-box-bottom {
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--paint-color-2);
+  
+    transform: translate(0%, -150%);
+  
+    animation-name: paint-bottom-box;
+    animation-duration: var(--waiting-animation-duration);
+    animation-iteration-count: infinite;
+  }
+  
+  #paint-brush {
+    width: 1rem;
+    transform: translate(-3rem, -10rem) rotate(0turn);
+  
+    animation-name: wait;
+    animation-duration: var(--waiting-animation-duration);
+    animation-iteration-count: infinite;
+  }
+  #paint-brush-handle {
+    height: 6rem;
+    background-color: brown;
+  }
+  #paint-brush-head {
+    background-color: hsl(59, 71%, 79%);
+    border-radius: 0 0 20% 20%;
+    height: 1rem;
+    transform: scale(4);
+  }
+  #paint-on-brush {
+    height: 1rem;
+    transform: scale(4);
+  }
+  
+  @keyframes wait {
+    0% {
+      transform: translate(-6rem, -10rem) rotate(0turn);
+    }
+    5% {
+      transform: translate(-6rem, -10rem) rotate(0.75turn);
+    }
+  
+    /*   First Stroke */
+    25% {
+      transform: translate(15rem, -10rem) rotate(0.75turn);
+    }
+    30% {
+      transform: translate(15rem, -13rem) rotate(0.25turn);
+    }
+    /*   second stroke */
+    40% {
+      transform: translate(-6rem, -13rem) rotate(0.25turn);
+    }
+  
+    50% {
+      transform: translate(-6rem, -10rem) rotate(0turn);
+    }
+  
+    /*   Begin heading back */
+    55% {
+      transform: translate(-6rem, -10rem) rotate(0.75turn);
+    }
+  
+    /*   first stroke */
+    75% {
+      transform: translate(15rem, -10rem) rotate(0.75turn);
+    }
+  
+    80% {
+      transform: translate(15rem, -13rem) rotate(0.25turn);
+    }
+  
+    /*   Second stroke */
+    90% {
+      transform: translate(-6rem, -13rem) rotate(0.25turn);
+    }
+    100% {
+      transform: translate(-6rem, -10rem) rotate(0turn);
+    }
+  }
+  @keyframes paint-top-box {
+    0% {
+      background-color: var(--paint-color-1);
+    }
+    33% {
+      background-color: var(--paint-color-1);
+    }
+    40% {
+      background-color: var(--paint-color-3);
+    }
+    83% {
+      background-color: var(--paint-color-3);
+    }
+    90% {
+      background-color: var(--paint-color-1);
+    }
+  }
+  @keyframes paint-bottom-box {
+    0% {
+      background-color: var(--paint-color-2);
+    }
+    10% {
+      background-color: var(--paint-color-2);
+    }
+  
+    25% {
+      background-color: var(--paint-color-4);
+    }
+  
+    55% {
+      background-color: var(--paint-color-4);
+    }
+    60% {
+      background-color: var(--paint-color-4);
+    }
+    /*   first stroke */
+    75% {
+      background-color: var(--paint-color-2);
+    }
+  }
+  
+  @keyframes pouring-paint-1 {
+    0% {
+      transform: translate(-150%, -150%) scale(1, 0);
+      border-radius: 0%;
+    }
+    10% {
+      transform: translate(-150%, -116%) scale(1, 1);
+      border-radius: 0% 100%;
+    }
+    85% {
+      transform: translate(-150%, -116%) scale(1, 1);
+      border-radius: 0% 100%;
+    }
+    90% {
+      transform: translate(-150%, -140%) scale(0, 1);
+      border-radius: 0% 100%;
+    }
+    100% {
+      transform: translate(-150%, -140%) scale(0, 1);
+      border-radius: 0% 100%;
+    }
+  }
+  @keyframes pouring-paint-2 {
+    0% {
+      transform: translate(50%, -150%) scale(1, 0);
+      border-radius: 0%;
+    }
+    10% {
+      transform: translate(50%, -116%) scale(1, 1);
+      border-radius: 100% 0%;
+    }
+    85% {
+      transform: translate(50%, -116%) scale(1, 1);
+      border-radius: 100% 0%;
+    }
+    90% {
+      transform: translate(50%, -140%) scale(0, 1);
+      border-radius: 100% 0%;
+    }
+    100% {
+      transform: translate(50%, -140%) scale(0, 1);
+      border-radius: 100% 0%;
+    }
+  }
+  
+  @keyframes load {
+    0% {
+      height: 3rem;
+      transform: translate(-50%, -100%) scale(0, 0);
+    }
+  
+    50% {
+      transform: translate(-50%, -100%) scale(0.5, 0);
+    }
+    75% {
+      transform: translate(-50%, -120%) scale(0.75, 0.5);
+    }
+    100% {
+      height: 3rem;
+      transform: translate(-50%, -150%) scale(1, 1);
+    }
+  }
+  
