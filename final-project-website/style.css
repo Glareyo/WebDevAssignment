@@ -19,7 +19,7 @@ html {
     --info-font: 'Courier New', Courier, monospace;
     --info-title-font-size: 3rem;
 
-    --art-title-image: url("Images/art-images/skeletons-gif.gif");
+    --art-title-image: url("Images\\art-images/skeletons-gif.gif");
 
     --programming-image: url("Images\\programming-title-img.png");
     --programming-menu-image: slategray;
